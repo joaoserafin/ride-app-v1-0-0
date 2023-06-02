@@ -126,3 +126,35 @@ a {
 .bgSecondary {
 background-color: var(--secondary) !important;
 }
+
+
+.dropdown-toggle::after {
+  display: none !important; 
+}
+
+.dropdown .dropdown-menu {
+  -webkit-animation-name: dropdownAnimation !important;
+  animation-name: dropdownAnimation !important;
+  -webkit-animation-duration: 0.5s !important;
+  animation-duration: 0.5s !important;
+  -webkit-animation-iteration-count: 1 !important;
+  animation-iteration-count: 1 !important;
+  -webkit-animation-timing-function: ease !important;
+  animation-timing-function: ease !important;
+  -webkit-animation-fill-mode: forwards !important;
+  animation-fill-mode: forwards !important;
+}
+
+@-webkit-keyframes dropdownAnimation {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px) !important;
+    transform: translateY(0px);
+  }
+}

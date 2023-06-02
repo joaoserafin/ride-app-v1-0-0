@@ -21,10 +21,6 @@ export default function Footer() {
     const maintenanceRoute = newRoute === '/maintenance'
     const shopRoute = newRoute === '/shop'
 
-    console.log("mapRoute", mapRoute)
-
-
-
 
     return (
         <div className={`${styles.main} shadow text-light `} >
