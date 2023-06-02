@@ -5,8 +5,8 @@ import { Inter } from 'next/font/google'
 import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/globals.css'
 import MainLayout from '@/components/layout/MainLayout'
-import Footer from '@/components/template/Footer'
-import Body from '@/components/template/body'
+import Footer from '../components/template/Footer'
+import Body from '@/components/template/Body'
 
 const inter = Inter({ subsets: ['latin'] })
 
