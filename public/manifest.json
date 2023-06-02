@@ -1,7 +1,7 @@
 {
     "theme_color": "#F25252",
     "background_color": "#F2F2F2",
-    "display": "minimal-ui",
+    "display": "standalone",
     "scope": "/",
     "start_url": "/map",
     "name": "Ride",
