@@ -65,7 +65,7 @@ export default function MapPage() {
                         </button>
 
                     </div>
-                    <small className="text-light ms-3">{routeFilter}</small>
+                    <small className="text-light ms-3">{routeFilter}.</small>
                 </div>
 
 
