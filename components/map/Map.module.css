@@ -2,6 +2,8 @@
     position: fixed;
     top: 0;
     overflow: hidden;
-    height: 85vh;
+    height: 90vh;
     width: 100vw;
+    /* clip: rect(0px,100vw,90vh,0px); */
+    border-radius: 0 0 18px 18px ;
 }

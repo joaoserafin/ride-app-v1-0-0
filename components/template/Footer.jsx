@@ -8,51 +8,58 @@ import { BsWrench } from '@react-icons/all-files/bs/BsWrench'
 import { BiWrench } from '@react-icons/all-files/bi/BiWrench'
 import { FiShoppingCart } from '@react-icons/all-files/fi/FiShoppingCart'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 export default function Footer() {
 
 
+    const pathname = usePathname()
+    const myRideRoute = pathname === '/myRide'
+    const mapRoute = pathname === '/map'
+    const maintenanceRoute = pathname === '/maintenance'
+    const shopRoute = pathname === '/shop'
+
+
+
+
     return (
-        <div className={`${styles.main} shadow text-light d-flex justify-content-around`} >
-            <div className="col-3 pt-4">
-                <Link href='/myRide'>
-                    <div className='row d-flex justify-content-center'>
-                        {/* <FontAwesomeIcon icon={faBicycle} className={styles.icons} /> */}
-                        <BsHouse className={styles.icons} />
-                    </div>
-                    {/* <span className={`row d-flex justify-content-center mt-2 ${styles.font}`} >
-                        Minha Ride
-                    </span> */}
-                </Link>
-            </div>
-            <div className="col-3 pt-4">
-                <Link href='/myRide'>
-                    <div className='row d-flex justify-content-center'>
-                        <BsMap className={styles.icons} />
-                        {/* <FontAwesomeIcon icon={faMapLocationDot} className={styles.icons} /> */}
-                    </div>
-                    {/* <span className={`row d-flex justify-content-center mt-2 ${styles.font}`} >
-                        Mapa
-                    </span> */}
-                </Link>
-            </div>
-            <div className="col-3 pt-4">
-                <div className='row d-flex justify-content-center'>
-                    <BiWrench className={styles.icons} />
-                    {/* <FontAwesomeIcon icon={faWrench} className={styles.icons} /> */}
+        <div className={`${styles.main} shadow text-light `} >
+            <div className={`${styles.footerPosition} d-flex justify-content-around`}>
+
+                <div className={`${styles.iconsTag}`} style={{ height: '100%' }}>
+                    <Link href='/myRide' className={`${styles.iconsTag} ${myRideRoute ? styles.iconSelected : ''}`}>
+                        <div >
+                            <BsHouse />
+                        </div>
+                    </Link>
                 </div>
-                {/* <span className={`row d-flex justify-content-center mt-2 ${styles.font}`} >
-                    Manutenção
-                </span> */}
-            </div>
-            <div className="col-3 pt-4">
-                <div className='row d-flex justify-content-center'>
-                    <FiShoppingCart className={styles.icons} />
-                    {/* <FontAwesomeIcon icon={faShoppingCart} className={styles.icons} /> */}
+                <div className={`${styles.iconsTag}`} style={{ height: '100%' }}>
+                    <Link href='/map' className={`${styles.iconsTag} ${mapRoute ? styles.iconSelected : ''}`}>
+                        <div>
+                            <BsMap />
+
+                        </div>
+
+                    </Link>
                 </div>
-                {/* <span className={`row d-flex justify-content-center mt-2 ${styles.font}`} >
-                    Shopping
-                </span> */}
+                <div className={`${styles.iconsTag}`} style={{ height: '100%' }}>
+                    <Link href='/myRide' className={`${styles.iconsTag} ${maintenanceRoute ? styles.iconSelected : ''}`}>
+                        <div>
+                            <BiWrench />
+                        </div>
+
+                    </Link>
+                </div>
+                <div className={`${styles.iconsTag}`} style={{ height: '100%' }}>
+                    <Link href='/myRide' className={`${styles.iconsTag} ${shopRoute ? styles.iconSelected : ''}`}>
+                        <div>
+                            <FiShoppingCart />
+                        </div>
+
+                    </Link>
+                </div>
+
+
             </div>
 
         </div>

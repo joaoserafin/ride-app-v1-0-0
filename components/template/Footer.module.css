@@ -31,4 +31,12 @@
     align-items: center;
     font-size: 25px;
     color: #434343 !important;
+    height: 45px;
+    width: 45px;
 }
+
+.iconSelected {
+    border: solid #434343 2px;
+    border-radius: 50%;
+}
+
