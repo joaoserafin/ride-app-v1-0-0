@@ -26,11 +26,13 @@ export default function MyApp({ Component, pageProps }) {
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
           integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
           crossorigin="" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/icon.png" />
       </Head>
       {/* <body className={inter.className}> */}
       <body >
         <Body>
-        <Component {...pageProps} />
+          <Component {...pageProps} />
           {/* {children} */}
         </Body>
 
