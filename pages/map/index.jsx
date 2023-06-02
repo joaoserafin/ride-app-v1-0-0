@@ -27,7 +27,7 @@ import { BsList } from '@react-icons/all-files/bs/BsList'
 export default function MapPage() {
 
     const [currentLocation, setCurrentLocation] = useState('')
-    const [routeFilter, setRouterFilter] = useState('Rota mais rápida')
+    const [routeFilter, setRouterFilter] = useState('Rota inteligente')
 
     useEffect(() => {
         getLocation()
