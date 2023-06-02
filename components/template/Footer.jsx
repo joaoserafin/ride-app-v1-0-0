@@ -8,16 +8,18 @@ import { BsWrench } from '@react-icons/all-files/bs/BsWrench'
 import { BiWrench } from '@react-icons/all-files/bi/BiWrench'
 import { FiShoppingCart } from '@react-icons/all-files/fi/FiShoppingCart'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import Router, { useRouter } from 'next/router'
+
 
 export default function Footer() {
 
 
-    const pathname = usePathname()
-    const myRideRoute = pathname === '/myRide'
-    const mapRoute = pathname === '/map'
-    const maintenanceRoute = pathname === '/maintenance'
-    const shopRoute = pathname === '/shop'
+    const router = useRouter()
+    const newRoute = router.asPath
+    const myRideRoute = newRoute === '/myRide'
+    const mapRoute = newRoute === '/map'
+    const maintenanceRoute = newRoute === '/maintenance'
+    const shopRoute = newRoute === '/shop'
 
 
 
