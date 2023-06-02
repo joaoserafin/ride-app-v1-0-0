@@ -21,6 +21,8 @@ export default function Footer() {
     const maintenanceRoute = newRoute === '/maintenance'
     const shopRoute = newRoute === '/shop'
 
+    console.log("mapRoute", mapRoute)
+
 
 
 
@@ -29,34 +31,46 @@ export default function Footer() {
             <div className={`${styles.footerPosition} d-flex justify-content-around`}>
 
                 <div className={`${styles.iconsTag}`} style={{ height: '100%' }}>
-                    <Link href='/myRide' className={`${styles.iconsTag} ${myRideRoute ? styles.iconSelected : ''}`}>
-                        <div >
-                            <BsHouse />
-                        </div>
+                    <Link href='/myRide'>
+                        <a className={`${styles.iconsTag} ${myRideRoute ? styles.iconSelected : ''}`}>
+
+                            <div >
+                                <BsHouse />
+                            </div>
+                        </a>
                     </Link>
                 </div>
                 <div className={`${styles.iconsTag}`} style={{ height: '100%' }}>
-                    <Link href='/map' className={`${styles.iconsTag} ${mapRoute ? styles.iconSelected : ''}`}>
-                        <div>
-                            <BsMap />
+                    <Link href='/map'>
+                        <a className={`${styles.iconsTag} ${mapRoute ? styles.iconSelected : ''}`}>
 
-                        </div>
+                            <div>
+                                <BsMap />
+
+                            </div>
+                        </a>
 
                     </Link>
                 </div>
                 <div className={`${styles.iconsTag}`} style={{ height: '100%' }}>
-                    <Link href='/myRide' className={`${styles.iconsTag} ${maintenanceRoute ? styles.iconSelected : ''}`}>
-                        <div>
-                            <BiWrench />
-                        </div>
+                    <Link href='/myRide'>
+                        <a className={`${styles.iconsTag} ${maintenanceRoute ? styles.iconSelected : ''}`}>
+
+                            <div>
+                                <BiWrench />
+                            </div>
+                        </a>
 
                     </Link>
                 </div>
                 <div className={`${styles.iconsTag}`} style={{ height: '100%' }}>
                     <Link href='/myRide' className={`${styles.iconsTag} ${shopRoute ? styles.iconSelected : ''}`}>
-                        <div>
-                            <FiShoppingCart />
-                        </div>
+                        <a className={`${styles.iconsTag} ${shopRoute ? styles.iconSelected : ''}`}>
+
+                            <div>
+                                <FiShoppingCart />
+                            </div>
+                        </a>
 
                     </Link>
                 </div>
