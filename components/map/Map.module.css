@@ -1,0 +1,7 @@
+.mapTag {
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    height: 85vh;
+    width: 100vw;
+}

@@ -1,0 +1,34 @@
+.main {
+    position: fixed;
+    top: 0;
+    background-color: var(--primary);
+    width: 100%;
+    height: 100%;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #ff985d 0%, #F7CE68 100%);
+
+    z-index: 0;
+}
+
+.icons {
+    height: 25px;
+}
+
+.font {
+    font-size: 12px;
+}
+
+.footerPosition {
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+}
+
+.iconsTag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #434343 !important;
+}

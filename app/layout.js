@@ -1,5 +1,12 @@
-import './globals.css'
+
+"use client";
+import Head from 'next/head'
 import { Inter } from 'next/font/google'
+import 'bootstrap/dist/css/bootstrap.css'
+import '../styles/globals.css'
+import MainLayout from '@/components/layout/MainLayout'
+import Footer from '@/components/template/Footer_2'
+import Body from '@/components/template/body'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -10,8 +17,24 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+
+    <html lang="pt-br">
+      <Head>
+        <title>AKVO</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="icon" href="favicon.ico" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin="" />
+      </Head>
+      <body className={inter.className}>
+        <Body>
+
+          {children}
+        </Body>
+
+        <Footer />
+      </body>
     </html>
   )
 }

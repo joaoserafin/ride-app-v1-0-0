@@ -1,0 +1,13 @@
+/* .header {
+    height: 150px;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #ff985d 0%, #F7CE68 100%);
+} */
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    z-index: 1000001;
+}
