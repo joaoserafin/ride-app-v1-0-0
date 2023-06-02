@@ -51,7 +51,7 @@ export default function MapPage() {
                     <div className="col-9 d-flex justify-content-center ms-3">
                         <InputGroup>
                             <DropdownButton class="btn bgSecondary text-light dropdown-toggle" type="button" variant="secondary" data-bs-toggle="dropdown" aria-expanded="false" title={<FontAwesomeIcon icon={faBars} />}>
-                                <Dropdown.Item onClick={() => setRouterFilter('Rota econômica')}>Rota econômica</Dropdown.Item>
+                                <Dropdown.Item onClick={() => setRouterFilter('Rota inteligente')}>Rota inteligente</Dropdown.Item>
                                 <Dropdown.Item onClick={() => setRouterFilter('Rota mais rápida')}>Rota mais rápida</Dropdown.Item>
                                 <Dropdown.Item onClick={() => setRouterFilter('Rota turística')}>Rota turística</Dropdown.Item>
                             </DropdownButton>
