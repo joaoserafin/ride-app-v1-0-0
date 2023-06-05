@@ -43,7 +43,7 @@
   --vivivBlue: #023E73;
   --cream: #F2F2F2;
 
-  --footerHeight: 70px;
+  --footerHeight: 40px;
 }
 
 @media (prefers-color-scheme: dark) {
