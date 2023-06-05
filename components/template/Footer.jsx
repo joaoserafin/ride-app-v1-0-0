@@ -39,13 +39,10 @@ export default function Footer() {
                 <div className={`${styles.iconsTag}`} style={{ height: '100%' }}>
                     <Link href='/map'>
                         <a className={`${styles.iconsTag} ${mapRoute ? styles.iconSelected : ''}`}>
-
                             <div>
                                 <BsMap />
-
                             </div>
                         </a>
-
                     </Link>
                 </div>
                 <div className={`${styles.iconsTag}`} style={{ height: '100%' }}>

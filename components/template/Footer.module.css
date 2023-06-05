@@ -21,7 +21,7 @@
 .footerPosition {
     position: fixed;
     bottom: 0;
-    height: 55px;
+    height: 45px;
     width: 100%;
 }
 
@@ -29,10 +29,10 @@
     display: flex;
     justify-content: center;
     align-items: top;
-    font-size: 25px;
+    font-size: 20px;
     color: #434343 !important;
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
 }
 
 .iconSelected {
