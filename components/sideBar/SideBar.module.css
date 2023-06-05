@@ -1,0 +1,29 @@
+.mainShow {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0px;
+    background-color: rgb(196, 196, 196);
+    z-index: 100000000001;
+    width: 350px;
+    transition: .5s ease-in-out;
+}
+
+.mainHide {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: -350px;
+    background-color: rgb(196, 196, 196);
+
+    z-index: 100000000001;
+    width: 350px;
+    transition: .5s ease-in-out;
+}
+
+.hamb {
+    position: absolute;
+    right: -50px;
+    top: 0;
+    height: 10px;
+}

@@ -18,7 +18,7 @@ export default function Footer() {
     const newRoute = router.asPath
     const myRideRoute = newRoute === '/myRide'
     const mapRoute = newRoute === '/map'
-    const maintenanceRoute = newRoute === '/maintenance'
+    const maintenanceRoute = newRoute === '/rideMaintenance'
     const shopRoute = newRoute === '/shop'
 
 
@@ -49,7 +49,7 @@ export default function Footer() {
                     </Link>
                 </div>
                 <div className={`${styles.iconsTag}`} style={{ height: '100%' }}>
-                    <Link href='/myRide'>
+                    <Link href='/rideMaintenance'>
                         <a className={`${styles.iconsTag} ${maintenanceRoute ? styles.iconSelected : ''}`}>
 
                             <div>

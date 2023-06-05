@@ -1,0 +1,9 @@
+.statusTag {
+    border: solid 3px #F25252;
+    border-radius: 50%;
+    height: 10vh;
+    width: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

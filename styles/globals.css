@@ -158,3 +158,8 @@ background-color: var(--secondary) !important;
     transform: translateY(0px);
   }
 }
+
+
+.myRideImg {
+  width: 100%;
+}

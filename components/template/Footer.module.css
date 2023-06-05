@@ -21,14 +21,14 @@
 .footerPosition {
     position: fixed;
     bottom: 0;
-    height: 70px;
+    height: 55px;
     width: 100%;
 }
 
 .iconsTag {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     font-size: 25px;
     color: #434343 !important;
     height: 45px;

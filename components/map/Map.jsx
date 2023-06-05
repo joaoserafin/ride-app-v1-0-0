@@ -1,7 +1,9 @@
-import { MapContainer, Marker, Polygon, Popup, TileLayer, useMap, Circle } from 'react-leaflet'
+import { MapContainer, Marker, Polygon, Popup, TileLayer, useMap, Circle, } from 'react-leaflet'
 import { CRS } from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import styles from './Map.module.css'
+
+
 
 
 export default function Map(props) {
@@ -12,6 +14,12 @@ export default function Map(props) {
     const MAPBOX_API_KEY = process.env.NEXT_PUBLIC_MAPBOX_API_KEY
     const MAPBOX_USERID = process.env.NEXT_PUBLIC_MAPBOX_USERID
     const MAPBOX_STYLEID = process.env.NEXT_PUBLIC_MAPBOX_STYLEID
+
+    // const icon = L.icon({ 
+    //     iconRetinaUrl:iconRetina, 
+    //     iconUrl: iconMarker, 
+    //     shadowUrl: iconShadow 
+    // });
 
     const CustomTileLayer = () => {
         return MAPBOX_API_KEY ? (
@@ -43,8 +51,14 @@ export default function Map(props) {
                 color={'#F25252'}
                 key={'user'}
                 center={center}
-                radius={3} style={{ border :'5px solid #fff'}}
+                radius={3} style={{ border: '5px solid #fff' }}
             />
+
+            {/* <Marker position={[-27.63948074832516, -52.28077070401094]} >
+                <Popup>
+                    A pretty CSS3 popup. <br /> Easily customizable.
+                </Popup>
+            </Marker> */}
 
 
 
