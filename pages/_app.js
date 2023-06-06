@@ -28,6 +28,7 @@ export default function MyApp({ Component, pageProps }) {
           crossOrigin="" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/icon.png" />
+        <link rel="stylesheet" href="path/to/fontawesome.min.css" />
       </Head>
       {/* <body className={inter.className}> */}
       <body >
