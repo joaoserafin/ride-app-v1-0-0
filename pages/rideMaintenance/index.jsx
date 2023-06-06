@@ -5,12 +5,14 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import InputGroup from 'react-bootstrap/InputGroup';
 import { BsSearch } from '@react-icons/all-files/bs/BsSearch'
 import MaintenanceTable from "@/components/rideMaintenance/MaintenanceTable";
+import { useState } from "react";
+import maintenanceVideos from '@/components/rideMaintenance/maintenanceVideos'
 
 
 
 export default function RideMaintenance() {
 
-
+    const [videoSelected, setVideoSelected] = useState(1)
 
     return (
         <div className={`bg-dark text-light ${styles.main}`}>
@@ -27,22 +29,29 @@ export default function RideMaintenance() {
 
                 </div>
             </div>
-            <div className="row p-2">
-                <img src="/MAINTENENCE_IMAGE_1.png" alt="" />
-            </div>
-            <div className="row px-2">
+            {maintenanceVideos().filter(elem => elem.id === videoSelected).map(elem => {
+                return (
+                    <>
+                        <div className="row p-2">
+                            <img src={elem.image} alt="" />
+                        </div>
+                        <div className="row px-2">
 
-                <span>Troca de pneu - Roda Traseira</span>
-            </div>
-            <div className="row px-2 my-2">
-                <div>
-                    <span className="badge badge-outline rounded-pill text-bg-secondary"><small>Nível <strong>médio</strong></small></span>
-                </div>
-            </div>
+                            <span>{elem.name}</span>
+                        </div>
+                        <div className="row px-2 my-2">
+                            <div>
+                                <span className="badge badge-outline rounded-pill text-bg-secondary"><small>Nível <strong>médio</strong></small></span>
+                            </div>
+                        </div>
+                    </>
+                )
+            })}
+
 
             <div className="row px-3 my-3">
                 <div>
-                    <MaintenanceTable />
+                    <MaintenanceTable setVideoSelected={id => setVideoSelected(id)} videoSelected={videoSelected} />
                 </div>
             </div>
         </div>
