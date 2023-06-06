@@ -91,7 +91,7 @@ export default function MaintenanceTable(props) {
                             {maintenanceVideos().map(elem => {
                                 return (
 
-                                    <div className="row  my-3" type="button" onClick={() => props.setVideoSelected(elem.id)}>
+                                    <div className="row  my-3" type="button" onClick={() => {props.setVideoSelected(elem.id),  setStatus('pecas')}}>
                                         <div className=" d-flex">
 
                                             <div>
