@@ -15,23 +15,44 @@ export default function MaintenanceTable(props) {
         <>
 
             <div className="row">
-                <div className={`col-4 text-center px-2 ${status === 'ferramentas' ? 'border-bottom' : ''}`} data-bs-target="#optionsCarousel" data-bs-slide-to="0" >
-                    <span onClick={() => setStatus('ferramentas')} data-bs-target="#optionsCarousel" data-bs-slide-to="0"
-                        className={status === 'ferramentas' ? 'fw-bold' : ''}><small>Ferramentas</small></span>
+                <div className={`col-6 text-center px-2 ${status === 'pecas' ? 'border-bottom' : ''}`} data-bs-target="#optionsCarousel" data-bs-slide-to="0" >
+                    <span onClick={() => setStatus('pecas')} data-bs-target="#optionsCarousel" data-bs-slide-to="0"
+                        className={status === 'pecas' ? 'fw-bold' : ''}><small>Peças e Ferramentas</small></span>
                 </div>
-                <div className={`col-4 text-center px-2 ${status === 'pecas' ? 'border-bottom' : ''}`} data-bs-target="#optionsCarousel" data-bs-slide-to="1">
-                    <span onClick={() => setStatus('pecas')}
-                        className={status === 'pecas' ? 'fw-bold' : ''}><small>Peças</small></span>
-                </div>
-                <div className={`col-4 text-center px-2 ${status === 'videos' ? 'border-bottom' : ''}`} data-bs-target="#optionsCarousel" data-bs-slide-to="2">
+                <div className={`col-6 text-center px-2 ${status === 'videos' ? 'border-bottom' : ''}`} data-bs-target="#optionsCarousel" data-bs-slide-to="1">
                     <span onClick={() => setStatus('videos')}
-                        className={status === 'videos' ? 'fw-bold' : ''}><small>Vídeos</small></span>
+                        className={status === 'videos' ? 'fw-bold' : ''}><small>Mais Vídeos</small></span>
                 </div>
             </div>
             <div>
-                <div id="optionsCarousel" class="carousel slide" data-bs-touch="false" data-bs-interval='false'>
-                    <div class="carousel-inner">
-                        <div class={`carousel-item ${status === 'ferramentas' ? 'active' : ''}`} >
+                <div id="optionsCarousel" class="carousel slide" data-bs-touch="false" data-bs-interval='false' >
+                    <div class="carousel-inner" style={{ height: "36vh", overflowY: "scroll" }}>
+                        <div class={`carousel-item mt-3 ${status === 'pecas' ? 'active' : ''}`} >
+                            <span className=""><small>Peças</small></span>
+                            {maintenanceVideos().find(elem => elem.id === props.videoSelected).parts.map(elem => {
+                                return (
+                                    <div className="row  my-3" type="button">
+                                        <div className="d-flex align-items-center">
+                                            <div>
+                                                <img src={elem.image} alt="" height={80} style={{ borderRadius: '50%' }} />
+                                            </div>
+                                            <div className="col px-3">
+                                                <div className="d-flex">
+                                                    <div className="col">
+                                                        <span style={{ fontSize: '14px' }}>{elem.name}</span>
+                                                    </div>
+                                                    <div className="col d-flex justify-content-end">
+                                                        <span type="button"
+                                                            className="badge text-bg-secondary">Comprar</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )
+                            })}
+                            <hr />
+                            <span><small>Ferramentas</small></span>
 
                             {maintenanceVideos().find(elem => elem.id === props.videoSelected).tools.map(elem => {
                                 return (
@@ -47,7 +68,7 @@ export default function MaintenanceTable(props) {
                                                     </div>
                                                     <div className="col d-flex justify-content-end">
                                                         <span type="button"
-                                                         className="badge text-bg-secondary">Comprar</span>
+                                                            className="badge text-bg-secondary">Comprar</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -56,33 +77,7 @@ export default function MaintenanceTable(props) {
                                 )
                             })}
 
-                        </div>
 
-
-                        <div class={`carousel-item ${status === 'pecas' ? 'active' : ''}`}>
-
-                            {maintenanceVideos().find(elem => elem.id === props.videoSelected).parts.map(elem => {
-                                return (
-                                    <div className="row  my-3" type="button">
-                                        <div className="d-flex align-items-center">
-                                            <div>
-                                                <img src={elem.image} alt="" height={80} style={{ borderRadius: '50%' }} />
-                                            </div>
-                                            <div className="col px-3">
-                                                <div className="d-flex">
-                                                    <div className="col">
-                                                        <span style={{ fontSize: '14px' }}>{elem.name}</span>
-                                                    </div>
-                                                    <div className="col d-flex justify-content-end">
-                                                        <span type="button"
-                                                         className="badge text-bg-secondary">Comprar</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                )
-                            })}
 
                         </div>
 
@@ -91,7 +86,7 @@ export default function MaintenanceTable(props) {
                             {maintenanceVideos().map(elem => {
                                 return (
 
-                                    <div className="row  my-3" type="button" onClick={() => {props.setVideoSelected(elem.id),  setStatus('pecas')}}>
+                                    <div className="row  my-3" type="button" onClick={() => { props.setVideoSelected(elem.id), setStatus('pecas') }}>
                                         <div className=" d-flex">
 
                                             <div>

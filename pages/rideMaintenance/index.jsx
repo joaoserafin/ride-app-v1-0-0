@@ -41,7 +41,7 @@ export default function RideMaintenance() {
                         </div>
                         <div className="row px-2 my-2">
                             <div>
-                                <span className="badge badge-outline rounded-pill text-bg-secondary"><small>Nível <strong>médio</strong></small></span>
+                                <span className="badge badge-outline rounded-pill text-bg-secondary"><small>{elem.level}</small></span>
                             </div>
                         </div>
                     </>
