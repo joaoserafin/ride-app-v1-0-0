@@ -5,7 +5,7 @@ import maintenanceVideos from './maintenanceVideos.js'
 
 export default function MaintenanceTable(props) {
 
-    const [status, setStatus] = useState('videos')
+    const [status, setStatus] = useState('pecas')
     const [videoSelected, setVideoSelected] = useState(maintenanceVideos()[3])
 
 
@@ -26,7 +26,7 @@ export default function MaintenanceTable(props) {
             </div>
             <div>
                 <div id="optionsCarousel" class="carousel slide" data-bs-touch="false" data-bs-interval='false' >
-                    <div class="carousel-inner" style={{ height: "36vh", overflowY: "scroll" }}>
+                    <div class="carousel-inner" style={{ height: "40vh", overflowY: "scroll" }}>
                         <div class={`carousel-item mt-3 ${status === 'pecas' ? 'active' : ''}`} >
                             <span className=""><small>Peças</small></span>
                             {maintenanceVideos().find(elem => elem.id === props.videoSelected).parts.map(elem => {

@@ -12,7 +12,7 @@ import maintenanceVideos from '@/components/rideMaintenance/maintenanceVideos'
 
 export default function RideMaintenance() {
 
-    const [videoSelected, setVideoSelected] = useState(1)
+    const [videoSelected, setVideoSelected] = useState(4)
 
     return (
         <div className={`bg-dark text-light ${styles.main}`}>
