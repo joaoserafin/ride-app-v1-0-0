@@ -24,7 +24,7 @@ export default function SideBar(props) {
             <div className="row">
                 <div className="d-flex justify-content-end">
                     <span
-                        className='py-3 px-3 fs-3' type='button'
+                        className='py-3 px-3 fs-3 text-dark' type='button'
                         onClick={() => setSideBarSHow(false)}>
                         <HiOutlineX />
                     </span>

@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import InputGroup from 'react-bootstrap/InputGroup';
 import { BsSearch } from '@react-icons/all-files/bs/BsSearch'
+import MaintenanceTable from "@/components/rideMaintenance/MaintenanceTable";
 
 
 
@@ -36,6 +37,12 @@ export default function RideMaintenance() {
             <div className="row px-2 my-2">
                 <div>
                     <span className="badge badge-outline rounded-pill text-bg-secondary"><small>Nível <strong>médio</strong></small></span>
+                </div>
+            </div>
+
+            <div className="row px-3 my-3">
+                <div>
+                    <MaintenanceTable />
                 </div>
             </div>
         </div>
