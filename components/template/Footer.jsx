@@ -18,7 +18,7 @@ export default function Footer() {
     const newRoute = router.asPath
     const myRideRoute = newRoute === '/myRide'
     const mapRoute = newRoute === '/map'
-    const maintenanceRoute = newRoute === '/rideMaintenance'
+    const maintenanceRoute = newRoute === '/rideMaintenance' || '/tutorialsMaintenance'
     const shopRoute = newRoute === '/shop'
 
 

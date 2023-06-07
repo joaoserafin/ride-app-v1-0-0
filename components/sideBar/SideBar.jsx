@@ -32,21 +32,12 @@ export default function SideBar(props) {
             </div>
             <div className="row">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item py-4">An item</li>
-                    <li class="list-group-item py-4">A second item</li>
-                    <li class="list-group-item py-4">A third item</li>
-                    <li class="list-group-item py-4">A fourth item</li>
-                    <li class="list-group-item py-4">And a fifth one</li>
-                    <li class="list-group-item py-4">An item</li>
-                    <li class="list-group-item py-4">A second item</li>
-                    <li class="list-group-item py-4">A third item</li>
-                    <li class="list-group-item py-4">A fourth item</li>
-                    <li class="list-group-item py-4">And a fifth one</li>
-                    <li class="list-group-item py-4">An item</li>
-                    <li class="list-group-item py-4">A second item</li>
-                    <li class="list-group-item py-4">A third item</li>
-                    <li class="list-group-item py-4">A fourth item</li>
-                    <li class="list-group-item py-4">And a fifth one</li>
+                    <li class="list-group-item py-4">Roda Dianteira</li>
+                    <li class="list-group-item py-4">Roda Traseira</li>
+                    <li class="list-group-item py-4">Controlador</li>
+                    <li class="list-group-item py-4">Bateria</li>
+                    <li class="list-group-item py-4">Freios</li>
+                    <li class="list-group-item py-4">Acessórios</li>
                 </ul>
             </div>
         </div>
