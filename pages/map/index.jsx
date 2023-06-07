@@ -83,9 +83,8 @@ export default function MapPage() {
             </div>
             {currentLocation && (
                 <Map currentLocation={[currentLocation.latitude, currentLocation.longitude]} />
-
             )}
-        </>
+        </div>
     )
 
 
