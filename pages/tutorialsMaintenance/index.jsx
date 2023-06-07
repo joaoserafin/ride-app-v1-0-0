@@ -13,7 +13,7 @@ export default function TutorialsMaintenance() {
     const [videoSelected, setVideoSelected] = useState(4)
 
     return (
-        <div className={`bg-dark text-light ${styles.main}`}>
+        <div className={`bg-dark text-light ${styles.main} fadeItem`}>
             <SideBar />
             {/* <div className="row mb-2">
                 <div className="col-11 mt-2 d-flex justify-content-center ms-3">

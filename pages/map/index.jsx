@@ -48,7 +48,7 @@ export default function MapPage() {
 
 
     return (
-        <>
+        <div className="fadeItem">
             <div className={`${styles.header} mt-3`} >
                 <div className="row py-3 ">
                     <div className="col-9 d-flex justify-content-center ms-3">

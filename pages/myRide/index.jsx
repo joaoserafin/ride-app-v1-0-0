@@ -6,7 +6,7 @@ export default function MyRide() {
 
 
     return (
-        <div>
+        <div className='fadeItem'>
 
             <div className={`row mt-4 mb-2`}>
                 <img src="verde_tiffany.png" className="myRideImg" />

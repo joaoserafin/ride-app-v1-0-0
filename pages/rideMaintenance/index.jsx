@@ -8,7 +8,7 @@ export default function RideMaintenance(props) {
 
 
     return (
-        <div>
+        <div className='fadeItem'>
             <Link href='/tutorialsMaintenance' >
                 <div class={`card text-bg-dark my-2 mx-3`}>
                     {/* <div class={`card text-bg-dark my-2 mx-3 ${styles.cardSize}`}> */}
