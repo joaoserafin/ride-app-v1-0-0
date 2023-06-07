@@ -32,7 +32,7 @@ export default function TutorialsMaintenance() {
 
                     </div>
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                        <input type="text" class="form-control" placeholder="Procurar" aria-label="Username" aria-describedby="basic-addon1" />
                         <span class="input-group-text" id="basic-addon1"><BsSearch /></span>
                     </div>
 
