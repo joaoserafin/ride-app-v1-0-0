@@ -43,13 +43,13 @@ export default function lalal() {
                     className="mySwiper"
                 >
                     <SwiperSlide className="d-flex justify-content-center align-items-start pe-5">
-                        <img src="/AZUL_LISTRA.PNG" alt="" height={400} />
+                        <img src="/AZUL_LISTRA.png" alt="" height={400} />
                     </SwiperSlide>
                     <SwiperSlide className="d-flex justify-content-center align-items-start pe-5">
-                        <img src="/AMARELO_LISTRA.PNG" alt="" height={400} />
+                        <img src="/AMARELO_LISTRA.png" alt="" height={400} />
                     </SwiperSlide>
                     <SwiperSlide className="d-flex justify-content-center align-items-start pe-5">
-                        <img src="/BRANCA_LISTRA.PNG" alt="" height={400} />
+                        <img src="/BRANCA_LISTRA.png" alt="" height={400} />
                     </SwiperSlide>
                 </Swiper>
 
