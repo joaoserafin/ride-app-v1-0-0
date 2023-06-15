@@ -31,9 +31,9 @@ export default function TutorialsMaintenance() {
                     <div className="mx-3">
 
                     </div>
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Procurar" aria-label="Username" aria-describedby="basic-addon1" />
-                        <span class="input-group-text" id="basic-addon1"><BsSearch /></span>
+                    <div className="input-group">
+                        <input type="text" className="form-control" placeholder="Procurar" aria-label="Username" aria-describedby="basic-addon1" />
+                        <span className="input-group-text" id="basic-addon1"><BsSearch /></span>
                     </div>
 
                 </div>

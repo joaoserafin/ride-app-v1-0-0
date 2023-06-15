@@ -25,9 +25,9 @@ export default function MaintenanceTable(props) {
                 </div>
             </div>
             <div>
-                <div id="optionsCarousel" class="carousel slide" data-bs-touch="false" data-bs-interval='false' >
-                    <div class="carousel-inner" style={{ height: "40vh", overflowY: "scroll" }}>
-                        <div class={`carousel-item mt-3 ${status === 'pecas' ? 'active' : ''}`} >
+                <div id="optionsCarousel" className="carousel slide" data-bs-touch="false" data-bs-interval='false' >
+                    <div className="carousel-inner" style={{ height: "40vh", overflowY: "scroll" }}>
+                        <div className={`carousel-item mt-3 ${status === 'pecas' ? 'active' : ''}`} >
                             <span className=""><small>Peças</small></span>
                             {maintenanceVideos().find(elem => elem.id === props.videoSelected).parts.map(elem => {
                                 return (
@@ -82,7 +82,7 @@ export default function MaintenanceTable(props) {
                         </div>
 
 
-                        <div class={`carousel-item ${status === 'videos' ? 'active' : ''}`} >
+                        <div className={`carousel-item ${status === 'videos' ? 'active' : ''}`} >
                             {maintenanceVideos().map(elem => {
                                 return (
 
