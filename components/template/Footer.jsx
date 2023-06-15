@@ -19,8 +19,9 @@ export default function Footer() {
     const myRideRoute = newRoute === '/myRide'
     const mapRoute = newRoute === '/map'
     const maintenanceRoute = newRoute === '/rideMaintenance'
-    const maintenanceTutorialsRoute = newRoute ==='/tutorialsMaintenance'
-    const shopRoute = newRoute === '/shop'
+    const maintenanceTutorialsRoute = newRoute === '/tutorialsMaintenance'
+    const shoppingRoute = newRoute === '/shopping'
+    const shopClassicsRoute = newRoute === '/shopClassics'
 
 
     return (
@@ -58,9 +59,8 @@ export default function Footer() {
                     </Link>
                 </div>
                 <div className={`${styles.iconsTag}`} style={{ height: '100%' }}>
-                    <Link href='/myRide' className={`${styles.iconsTag} ${shopRoute ? styles.iconSelected : ''}`}>
-                        <a className={`${styles.iconsTag} ${shopRoute ? styles.iconSelected : ''}`}>
-
+                    <Link href='/shopping' >
+                        <a className={`${styles.iconsTag} ${shoppingRoute || shopClassicsRoute ? styles.iconSelected : ''}`}>
                             <div>
                                 <FiShoppingCart />
                             </div>

@@ -1,0 +1,8 @@
+.cardBackground {
+    background-color: rgba(110, 110, 110, .8);
+}
+
+.cardSize {
+    height: 150px;
+    width: 350px;
+}
