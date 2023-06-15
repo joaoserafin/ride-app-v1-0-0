@@ -59,7 +59,7 @@ export default function Footer() {
                     </Link>
                 </div>
                 <div className={`${styles.iconsTag}`} style={{ height: '100%' }}>
-                    <Link href='/shopping' >
+                    <Link href='/shopClassics' >
                         <a className={`${styles.iconsTag} ${shoppingRoute || shopClassicsRoute ? styles.iconSelected : ''}`}>
                             <div>
                                 <FiShoppingCart />
