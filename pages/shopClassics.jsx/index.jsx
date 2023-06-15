@@ -1,4 +1,4 @@
-import { faLeftLong } from "@fortawesome/free-solid-svg-icons";
+// import { faLeftLong } from "@fortawesome/free-solid-svg-icons";
 import { AiOutlineLeft } from '@react-icons/all-files/ai/AiOutlineLeft'
 import Link from "next/link";
 import React, { useRef, useState } from "react";
@@ -14,9 +14,16 @@ import { EffectCards } from "swiper";
 
 
 
-export default function lalal() {
+export default function ShopClassics() {
 
 
+    const [mounted, setMounted] = useState(false);
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+    if (!mounted) {
+        return null; // return this null to avoid hydration errors
+    }
 
     return (
         <div className='fadeItem'>
