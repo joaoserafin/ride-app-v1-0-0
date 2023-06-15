@@ -36,7 +36,7 @@ export default function ShopClassics() {
 
 
 
-                <Swiper
+                {/* <Swiper
                     effect={"cards"}
                     grabCursor={true}
                     modules={[EffectCards]}
@@ -51,7 +51,7 @@ export default function ShopClassics() {
                     <SwiperSlide className="d-flex justify-content-center align-items-start pe-5">
                         <img src="/BRANCA_LISTRA.PNG" alt="" height={400} />
                     </SwiperSlide>
-                </Swiper>
+                </Swiper> */}
 
 
 
