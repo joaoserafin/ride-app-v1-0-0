@@ -14,7 +14,7 @@
 
 
 
-export default function ShopClassics() {
+export default function ShopClassics(props) {
 
 
     // const [mounted, setMounted] = useState(false);
