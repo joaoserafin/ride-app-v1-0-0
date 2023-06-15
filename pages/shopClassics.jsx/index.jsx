@@ -1,5 +1,4 @@
 import { faLeftLong } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { AiOutlineLeft } from '@react-icons/all-files/ai/AiOutlineLeft'
 import Link from "next/link";
 import React, { useRef, useState } from "react";
