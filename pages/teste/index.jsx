@@ -15,7 +15,13 @@ import { EffectCards } from "swiper";
 export default function Teste () {
 
 
-
+    const [mounted, setMounted] = useState(false);
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+    if (!mounted) {
+        return null; // return this null to avoid hydration errors
+    }
 
     return (
         <div className='fadeItem'>
