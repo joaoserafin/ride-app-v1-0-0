@@ -44,7 +44,7 @@ export default function Teste () {
                     effect={"cards"}
                     grabCursor={true}
                     modules={[EffectCards]}
-                    className="mySwiper"
+                    className=""
                 >
                     <SwiperSlide className="d-flex justify-content-center align-items-start pe-5">
                         <img src="/AZUL_LISTRA.PNG" alt="" height={400} />
