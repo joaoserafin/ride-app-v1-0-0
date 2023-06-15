@@ -1,7 +1,7 @@
 // import { faLeftLong } from "@fortawesome/free-solid-svg-icons";
 import { AiOutlineLeft } from '@react-icons/all-files/ai/AiOutlineLeft'
 import Link from "next/link";
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
