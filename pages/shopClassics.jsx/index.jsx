@@ -1,15 +1,15 @@
-// import { faLeftLong } from "@fortawesome/free-solid-svg-icons";
-import { AiOutlineLeft } from '@react-icons/all-files/ai/AiOutlineLeft'
-import Link from "next/link";
-import React, { useRef, useState, useEffect } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+// // import { faLeftLong } from "@fortawesome/free-solid-svg-icons";
+// import { AiOutlineLeft } from '@react-icons/all-files/ai/AiOutlineLeft'
+// import Link from "next/link";
+// import React, { useRef, useState, useEffect } from "react";
+// import { Swiper, SwiperSlide } from "swiper/react";
 
-import "swiper/css";
-import "swiper/css/effect-cards";
+// import "swiper/css";
+// import "swiper/css/effect-cards";
 
-import styles from './index.module.css'
+// import styles from './index.module.css'
 
-import { EffectCards } from "swiper";
+// import { EffectCards } from "swiper";
 
 
 
@@ -17,17 +17,18 @@ import { EffectCards } from "swiper";
 export default function ShopClassics() {
 
 
-    const [mounted, setMounted] = useState(false);
-    useEffect(() => {
-        setMounted(true);
-    }, []);
-    if (!mounted) {
-        return null; // return this null to avoid hydration errors
-    }
+    // const [mounted, setMounted] = useState(false);
+    // useEffect(() => {
+    //     setMounted(true);
+    // }, []);
+    // if (!mounted) {
+    //     return null; // return this null to avoid hydration errors
+    // }
 
     return (
         <div className='fadeItem'>
-            <div className="row d-flex py-3 ps-3">
+            teste
+            {/* <div className="row d-flex py-3 ps-3">
                 <div className="col-2">
                     <Link href='/shopping'>
                         <AiOutlineLeft />
@@ -61,7 +62,7 @@ export default function ShopClassics() {
 
 
 
-            </div>
+            </div> */}
 
         </div>
     )
