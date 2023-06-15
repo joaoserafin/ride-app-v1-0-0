@@ -9,7 +9,7 @@ export default function Shopping(props) {
 
     return (
         <div className='fadeItem'>
-            <Link href='/shopClassics' >
+            <Link href='/teste' >
                 <div className={`card text-bg-dark my-2 mx-3`}>
                     {/* <div className={`card text-bg-dark my-2 mx-3 ${styles.cardSize}`}> */}
                     <img src="./rideMaintenance_1.png" className="card-img" alt="..." />
