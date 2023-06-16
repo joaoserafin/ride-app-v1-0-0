@@ -100,7 +100,7 @@ export default function Teste() {
                 </Swiper>
 
             </div>
-            <div className="row" style={{ height: '5vh' }}>
+            <div className="row pt-2" style={{ height: '3vh' }}>
                 <div className="col-12 d-flex justify-content-center align-items-center">
 
                     <span style={{ fontSize: '16px', fontWeight: '425' }} className='text-light'>
@@ -108,13 +108,24 @@ export default function Teste() {
                     </span>
                 </div>
             </div>
-            <div className="row " style={{ height: '20vh' }}>
+            {/* <div className="row " style={{ height: '20vh' }}>
                 <div className="col-12 d-flex justify-content-start align-items-start" style={{ overflow: 'scroll' }}>
                     <img src="/RIDE_ATTRIBUTES.png" alt="" style={{ height: '20vh' }} />
                 </div>
+            </div> */}
+            <div className="row pt-0" style={{ height: '25vh' }}>
+                <div className="col-5 text-center" style={{ overflow: 'scroll' }}>
+                    <img src="/RIDE_ATT_COL_1.png" alt="" style={{ height: '25vh' }} className='' />
+                </div>
+                <div className="col-2 d-flex justify-content-center align-items-center" style={{ overflow: 'scroll' }}>
+                    <img src="/RIDE_ATT_COL_2.png" alt="" style={{ height: '25vh' }} className='' />
+                </div>
+                <div className="col-5 text-center" style={{ overflow: 'scroll' }}>
+                    <img src="/RIDE_ATT_COL_3.png" alt="" style={{ height: '25vh' }} className='' />
+                </div>
             </div>
 
-            <div className="row" style={{ height: '10vh' }}>
+            <div className="row" style={{ height: '5vh' }}>
                 <div className="col-12 d-flex justify-content-center align-items-center">
 
                     <span style={{ fontSize: '16px', fontWeight: '425' }} className='text-light'>
