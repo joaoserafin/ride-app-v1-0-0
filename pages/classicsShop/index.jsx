@@ -114,13 +114,13 @@ export default function Teste() {
                 </div>
             </div> */}
             <div className="row pt-0" style={{ height: '25vh' }}>
-                <div className="col-5 text-center" style={{ overflow: 'scroll' }}>
+                <div className="col-5 text-center" >
                     <img src="/RIDE_ATT_COL_1.png" alt="" style={{ height: '25vh' }} className='' />
                 </div>
-                <div className="col-2 d-flex justify-content-center align-items-center" style={{ overflow: 'scroll' }}>
+                <div className="col-2 d-flex justify-content-center align-items-center" >
                     <img src="/RIDE_ATT_COL_2.png" alt="" style={{ height: '25vh' }} className='' />
                 </div>
-                <div className="col-5 text-center" style={{ overflow: 'scroll' }}>
+                <div className="col-5 text-center" >
                     <img src="/RIDE_ATT_COL_3.png" alt="" style={{ height: '25vh' }} className='' />
                 </div>
             </div>
