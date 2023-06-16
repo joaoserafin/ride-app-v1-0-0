@@ -21,7 +21,7 @@ export default function Footer() {
     const maintenanceRoute = newRoute === '/rideMaintenance'
     const maintenanceTutorialsRoute = newRoute === '/tutorialsMaintenance'
     const shoppingRoute = newRoute === '/shopping'
-    const shopClassicsRoute = newRoute === '/shopClassics'
+    const shopClassicsRoute = newRoute === '/classicsShop'
 
 
     return (
