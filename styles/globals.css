@@ -166,8 +166,12 @@ a {
 
 
 .swiper {
-  width: 300px !important;
-  height: 400px !important;
+  width: 80vw !important;
+  height: 50vh !important;
+}
+
+.swiper img {
+  height: 50vh !important;
 }
 
 .swiper-slide {
@@ -191,4 +195,3 @@ a {
 .swiper-slide:nth-child(3n) {
   background-color: #cccccc;
 }
-
