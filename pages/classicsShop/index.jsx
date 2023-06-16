@@ -67,15 +67,17 @@ export default function Teste() {
 
     return (
         <div className='fadeItem'>
-            <div className="row d-flex py-3 ps-3">
-                <div className="col-2">
-                    <Link href='/shopping'>
+            <div className="row d-flex py-3">
+                <div className='text-light' style={{ position: 'absolute', display: 'flex', alignItems: 'center', left: '0', width: '50px' }}>
+
+                    <Link href='/shopping' >
+
                         <AiOutlineLeft />
                     </Link>
                 </div>
-                <div className="col-8 d-flex justify-content-center">
+                <div className="col-12 d-flex justify-content-center">
 
-                    <span>Clássicas</span>
+                    <span className='text-light'>Clássicas</span>
                 </div>
             </div>
             <div className="row">
@@ -118,7 +120,7 @@ export default function Teste() {
                     <span style={{ fontSize: '16px', fontWeight: '425' }} className='text-light'>
                         R$ {data[activeIndex].price}
                     </span>
-                    <div className='text-light' style={{ position: 'absolute', display: 'flex', alignItems: 'center', right: '0', width: '50px'}}>
+                    <div className='text-light' style={{ position: 'absolute', display: 'flex', alignItems: 'center', right: '0', width: '50px' }}>
 
                         <Link href='/shopping' >
 
