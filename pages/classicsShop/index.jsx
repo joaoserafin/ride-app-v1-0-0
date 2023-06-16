@@ -101,7 +101,7 @@ export default function Teste() {
             <div className="row" style={{ height: '5vh' }}>
                 <div className="col-12 d-flex justify-content-center align-items-center">
 
-                    <span style={{ fontSize: '16px', fontWeight: '425' }}>
+                    <span style={{ fontSize: '16px', fontWeight: '425' }} className='text-light'>
                         {data[activeIndex].name}
                     </span>
                 </div>
@@ -115,10 +115,10 @@ export default function Teste() {
             <div className="row" style={{ height: '10vh' }}>
                 <div className="col-12 d-flex justify-content-center align-items-center">
 
-                    <span style={{ fontSize: '16px', fontWeight: '425' }}>
+                    <span style={{ fontSize: '16px', fontWeight: '425' }} className='text-light'>
                         R$ {data[activeIndex].price}
                     </span>
-                    <div style={{ position: 'absolute', display: 'flex', alignItems: 'center', right: '0', width: '50px'}}>
+                    <div className='text-light' style={{ position: 'absolute', display: 'flex', alignItems: 'center', right: '0', width: '50px'}}>
 
                         <Link href='/shopping' >
 
