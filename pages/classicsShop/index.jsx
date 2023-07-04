@@ -133,8 +133,7 @@ export default function Teste() {
                     </span>
                     <div className='text-light' style={{ position: 'absolute', display: 'flex', alignItems: 'center', right: '0', width: '50px' }}>
 
-                        <Link href='/shopping' >
-
+                        <Link href='/accessoriesShop' >
                             <AiOutlineRight />
                         </Link>
                     </div>
