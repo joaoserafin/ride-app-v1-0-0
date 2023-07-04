@@ -3,7 +3,7 @@ import Link from "next/link";
 import { AiOutlineLeft } from '@react-icons/all-files/ai/AiOutlineLeft'
 import { AiOutlineRight } from '@react-icons/all-files/ai/AiOutlineRight'
 import ShoppingCart from "@/components/accessoriesShop/ShoppingCart";
-import AccessoriesData from "@/components/accessoriesShop/accessoriesData";
+import AccessoriesData from "@/components/accessoriesShop/AccessoriesData";
 import { useState } from "react";
 
 

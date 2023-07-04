@@ -1,4 +1,4 @@
-import AccessoriesData from "./accessoriesData"
+import AccessoriesData from "./AccessoriesData"
 
 
 export default function ShoppingCart(props) {
